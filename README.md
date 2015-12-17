@@ -6,6 +6,14 @@ SPM Client has transaction tracing capability. This allows to get insights about
 
 ## Usage
 
+### Add maven dependency
+
+    <dependency>
+    	<groupId>com.sematext.spm</groupId>
+    	<artifactId>spm-tracing-api</artifactId>
+    	<version>1.29.1</version>
+    </dependency>
+
 ### Mark traced methods
 
 To mark methods which should be traced use `com.sematext.spm.client.tracing.Traced` annotation:
