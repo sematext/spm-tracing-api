@@ -5,7 +5,7 @@
   <groupId>com.sematext.spm</groupId>
   <artifactId>spm-tracing-api</artifactId>
   <packaging>jar</packaging>
-  <version>1.29.1</version>
+  <version>1.29.4</version>
   <name>SPM Tracing API</name>
   <description>Java Tracing API for Performance Monitoring and Transaction Tracing via SPM</description>
   <url>https://github.com/sematext/spm-tracing-api</url>

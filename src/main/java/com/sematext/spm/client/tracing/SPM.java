@@ -20,9 +20,9 @@ import java.util.Map;
 
 import com.sematext.spm.client.tracing.agent.api.TransactionAccess;
 
-public final class SPMTracing {
+public final class SPM {
 
-  private SPMTracing() { }
+  private SPM() { }
 
   private static boolean active = false;
 
@@ -55,21 +55,21 @@ public final class SPMTracing {
   }
 
   /**
-   * Set parameter for transaction.
+   * Set custom parameter for transaction.
    * @param key key
    * @param value value
    */
-  public static void setTransactionParameter(String key, String value) {
+  public static void setCustomTransactionParameter(String key, String value) {
     if (active) {
       TransactionAccess.setTransactionParameter(key, value);
     }
   }
 
   /**
-   * Get current transaction parameters.
+   * Get current transaction custom parameters.
    * @return parameters
    */
-  public static Map<String, String> getTransactionParameters() {
+  public static Map<String, String> getCustomTransactionParameters() {
     if (active) {
       return TransactionAccess.getTransactionParameters();
     }
@@ -77,21 +77,21 @@ public final class SPMTracing {
   }
 
   /**
-   * Set parameter for current method.
+   * Set custom parameter for current method.
    * @param key key
    * @param value value
    */
-  public static void setMethodParameter(String key, String value) {
+  public static void setCustomMethodParameter(String key, String value) {
     if (active) {
       TransactionAccess.setMethodParameter(key, value);
     }
   }
 
   /**
-   * Get current method parameters.
+   * Get current custom method parameters.
    * @return parameters
    */
-  public static Map<String, String> getMethodParameters() {
+  public static Map<String, String> getCustomMethodParameters() {
     if (active) {
       return TransactionAccess.getMethodParameters();
     }

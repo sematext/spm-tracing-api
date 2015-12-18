@@ -25,7 +25,7 @@ import java.lang.annotation.Target;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Traced {
+public @interface Trace {
   /**
    * If true, then new transaction will be created when method called if no transaction started.
    * @return create new transaction
