@@ -1,5 +1,5 @@
 # spm-tracing-api
-Java/Scala/Clojure/Groovy Tracing API for [SPM Client](https://sematext.atlassian.net/wiki/display/PUBSPM/Transaction+Tracing).
+Tracing API for JVM (Java, Scala, Clojure, Groovy, etc.) for [SPM Client](https://sematext.atlassian.net/wiki/display/PUBSPM/Transaction+Tracing).
 
 
 SPM Client has transaction tracing capability. This lets you get
